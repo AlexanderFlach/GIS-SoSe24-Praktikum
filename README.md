@@ -1,0 +1,1 @@
+# GIS-SoSe24-Praktikum
