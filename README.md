@@ -6,6 +6,7 @@ Diese beinhalten den Name des Kontoinhabers, einen Kontostand und die Option Gel
 
 Beim Anlegen eines Kontos muss ein Passwort festgelegt werden, um sich anzumelden und eine PIN, die bei Überweisungen angegeben werden muss.
 ## Seitenstruktur
-Beim Öffnen der Website werden die Auswahlmöglichkeiten **Anmelden** und **Konto eröffnen** angezeigt.\
+Beim Öffnen der Website werden die Auswahlmöglichkeiten **Anmelden**, **Konto eröffnen** und **Kontenübersicht** angezeigt.\
 Nach dem **Anmelden** erscheinen die oben genannten Optionen als Buttons. Beim Eröffnen eines neuen Kontos werden Felder angezeigt,\
-in die man den Namen, das Passwort und die PIN eintragen kann.
+in die man den Namen, das Passwort und die PIN eintragen kann.\
+Bei der **Kontenübersicht** werden alle erstellten Konten angezeigt. Dort kann man ebenfalls ein Konto wählen und sich mit den Anmeldedaten anmelden.
