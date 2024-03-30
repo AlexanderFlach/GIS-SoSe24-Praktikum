@@ -1,9 +1,10 @@
 # GIS-SoSe24-Praktikum
 
-Das Projekt soll eine Website realisieren, die die Produkte eines Supermarkts beinhaltet.\
-Es werden mehrere Regale dargestellt, in die eine selbstgewählte Anzahl an Produkten eingeräumt bzw. ausgeräumt werden können.\
-Zusätzlich könnte man noch eine maximale Kapazität der Regale einführen, sodass das Einräumen in volle Regale nicht möglich ist. Diese landen dann automatisch in einem Lager und können von diesem in andere Regale verschoben werden.\
-Außerdem kann man über eine Suchleiste nach Produkten suchen und einsehen, wie viele noch vorrätig sind.\
+## Projektidee: Bank
+Das Projekt soll eine Website realisieren, auf welcher man beliebig viele Bankkonten anlegen kann.\
+Diese beinhalten den Name des Kontoinhabers, einen Kontostand und die Option Geld ein- bzw. auszuzahlen, sowie Transaktionen zwischen den angelegten Konten.
 
-ALTERNATIVE: Bank (Konto, Geld überweisen etc.)
-
+Beim Anlegen eines Kontos muss ein Passwort festgelegt werden, um sich anzumelden und eine PIN, die bei Überweisungen angegeben werden muss.
+## Seitenstruktur
+Beim Öffnen der Website werden die Auswahlmöglichkeiten **Anmelden** und **Konto eröffnen** angezeigt.
+Nach dem **Anmelden** erscheinen die oben genannten Optionen als Buttons. Beim Eröffnen eines neuen Kontos werden Felder angezeigt, in die man den Namen, das Passwort und die PIN eintragen kann.
