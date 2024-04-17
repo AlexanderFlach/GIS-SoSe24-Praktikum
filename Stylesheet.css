@@ -1,0 +1,7 @@
+body {
+    background-color: aliceblue;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
