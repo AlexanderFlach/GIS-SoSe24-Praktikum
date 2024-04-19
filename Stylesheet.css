@@ -4,8 +4,31 @@ body {
 main{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /*justify-content: center;*/
 }
 header{
-    
+    display: flex;
+    justify-content: space-between;
+}
+p{
+    border: 2px green solid;
+}
+div{
+    border:2px red solid;
+}
+#logo p{
+    display: inline-block;
+    margin: 0;
+    width: 70px;
+}
+#logo{
+    width: 70px;
+    text-align: center;
+}
+.headerText{
+    background-color: blueviolet;
+    text-align: center;
+    margin-top: 35%;
+    margin-left: 5px;
+    margin-right: 5px;
 }
