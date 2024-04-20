@@ -5,23 +5,29 @@
     </head>
     <body>
         <header>
-            <div id="logo">
-                <img src="Logo.png" width="50">
-                <p id="logoText">Constantin Banking</p>
+            <div id="logo" class="center"> <!--Logo + Text-->
+                <a href="welcome_website.html">
+                    <img src="Logo.png" width="100%">
+                    Constantin Banking 
+                </a>
+            </div>
+            <div style="flex: 1;"> <!--filler div-->
             </div>
             <div>
-                <p class="headerText">Girokonto</p>
-            </div>
-            <div style="flex: 1;">
+                <a href = login.html class="headerText" id="login">Login</a>
             </div>
             <div>
-                <p class="headerText">Login</p>
-            </div>
-            <div>
-                <p class="headerText">Konto eröffnen</p>
+                <a href="newAccount.html" class="headerText" id="konto">Konto eröffnen</a>
             </div>
         </header>
         <main>
+            <div style="margin-left: -8px;" class="filler"><!--div left of img-->
+            </div><!--Image below Header-->
+            <div style="flex: 1;" id="imgHeader" class="center">
+                <img src="BankCardImage.png" width="70%" class="center" id="cardImg">
+            </div>
+            <div style="margin-left: -8px;" class="filler"><!--div right of img-->
+            </div>
         </main>
     </body>
 </html>
