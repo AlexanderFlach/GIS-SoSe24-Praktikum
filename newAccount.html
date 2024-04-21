@@ -14,8 +14,29 @@
             <div style="flex: 1;"> <!--filler div-->
             </div>
             <div>
-                <a href="welcome_website.html" class="headerText" id="konto">zurück zur Startseite</a>
+                <a href="welcome_website.html" class="headerText" id="konto">back to homepage</a>
             </div>
         </header>
+
+        <div><br><br><br></div>
+        
+        <div class="login">
+            <form id="login" method="get" action="login.php">
+                <p><b>Register</b></p>
+                <label><b>User Name</b></label>
+                <input type="text" name="Uname" id="Uname" placeholder="create a Username">
+                <br><br>
+                <label><b>Password</b></label>
+                <input type="password" name="Pass" id="Pass" placeholder="create a Password">
+                <br><br>
+                <label><b>repeat Password</b></label>
+                <input type="password" name="Pass" id="Pass" placeholder="repeat your Password">
+                <br><br>
+                <label><b>PIN (4 digits)</b></label>
+                <input type="number" max="9999" name="Pin" id="Pin" placeholder="1234">
+                <br><br>
+                <input type="button" name="log" id="log" value="Log In Here">
+            </form>
+        </div>
     </body>
 </html>

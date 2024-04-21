@@ -1,11 +1,14 @@
-body {
+body{
     background-color: aliceblue;
+    font-family: 'Arial';
+    margin: 0;
+    padding: 0;
 }
 main{
     display: flex;
     flex-wrap: wrap;
 }
-.center {
+.center{
     display: block;
     text-align: center;
     margin-left: auto;
@@ -16,13 +19,10 @@ header{
     justify-content: space-between;
     max-height: 97px;
 }
-div{
-   
-}
-a{
+a{  /* no blue underline below links */
     text-decoration: none;
 }
-#logo{
+#logo{ 
     width: 75px;
     margin-left: 10px;
 }
@@ -36,61 +36,84 @@ a{
     padding-bottom: 3px;
     border-radius: 5px;
     font-size: calc(1em + 1vw);
+    p{
+        margin-top: -3px;
+        text-align: center;
+        font-size: 100%;
+        white-space: nowrap;
+    }
 }
-#login{
-    background-color:lightblue;
+div{
+    border: 2px red solid;
 }
-#konto{
+#konto{ /* left top link */
     background-color:blue;
     color: aliceblue;
 }
-#imgHeader{
+#imgHeader{ /* bank card background on home page */
     max-height: 400px;
     background-color: cadetblue;
     margin-top: 20px;
     padding-top: 35px;
     padding-bottom: 35px;
 }
-#cardImg{
+#cardImg{   /* bank card on home */
     max-height: 100%;
     max-width: 45%;
     border-radius: 6% 6% 6% 6%;
     box-shadow: 2px 2px 20px rgb(154, 203, 219);
 }
-.filler{
-    margin-top: 20px;
-}
+
 
 /* LOGIN PAGE */
 
-.container{
-    background-color:rgb(154, 203, 219);
-    padding: 40px;
+
+.login{
+    background-color: white;
     margin-left: 30%;
     margin-right: 30%;
-    margin-top: 50px;
-    text-align: center;
     min-width: 150px;
-    border-radius: 5px;
-    p{
-        word-wrap: break-word;
-        margin: 10px;
-    }
-    input{
-        width: 80%;
-    }
-}
-#loginButton{
-    background-color: blue;
-    color: white;
-    display: inline-block;
     padding: 10px;
-    padding-left: 20%;
-    padding-right: 20%;
-    margin-top: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px rgb(154, 203, 219);
+    p{
+        font-size: 35px;
+        text-align: center;
+        padding-bottom: 10px;
+        border-bottom: 2px grey solid;
+    }
 }
-#username{
-    text-align: center;
-    line-height: 45px;
-    color: lightblue;
+input[type=text], input[type=password], input[type=number]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
 }
+input::-webkit-outer-spin-button, /*hides arrows*/
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number]{
+    letter-spacing: 50%;
+}
+input[type=button]{
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+/* ACCOUNT PAGE */
+
+
