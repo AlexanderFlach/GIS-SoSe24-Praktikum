@@ -1,5 +1,5 @@
 body{
-    background-color: aliceblue;
+    background-color: white;
     font-family: 'Arial';
     margin: 0;
     padding: 0;
@@ -7,6 +7,10 @@ body{
 main{
     display: flex;
     flex-wrap: wrap;
+}
+.buttonColor{
+    color: #135D66;
+    background-color: #77B0AA;
 }
 .center{
     display: block;
@@ -22,9 +26,16 @@ header{
 a{  /* no blue underline below links */
     text-decoration: none;
 }
+#konto{
+    white-space: nowrap;
+}
 #logo{ 
     width: 75px;
     margin-left: 10px;
+    p{
+        margin: 0;
+        color: #135D66;
+    }
 }
 .headerText{
     line-height: 100px;
@@ -43,25 +54,18 @@ a{  /* no blue underline below links */
         white-space: nowrap;
     }
 }
-div{
-    border: 2px red solid;
-}
-#konto{ /* left top link */
-    background-color:blue;
-    color: aliceblue;
-}
 #imgHeader{ /* bank card background on home page */
     max-height: 400px;
     background-color: cadetblue;
     margin-top: 20px;
     padding-top: 35px;
-    padding-bottom: 35px;
+    padding-bottom: 40px;
 }
 #cardImg{   /* bank card on home */
     max-height: 100%;
-    max-width: 45%;
+    max-width: 500px;
     border-radius: 6% 6% 6% 6%;
-    box-shadow: 2px 2px 20px rgb(154, 203, 219);
+    box-shadow: 4px 4px 30px rgb(154, 203, 219);
 }
 
 
@@ -82,7 +86,7 @@ div{
         font-size: 35px;
         text-align: center;
         padding-bottom: 10px;
-        border-bottom: 2px grey solid;
+        border-bottom: 2px #135D66 solid;
     }
 }
 input[type=text], input[type=password], input[type=number]{
@@ -102,15 +106,16 @@ input::-webkit-inner-spin-button{
 input[type=number]{
     letter-spacing: 50%;
 }
-input[type=button]{
-    background-color: #04AA6D;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+
+
+/* REGISTER PAGE */
+
+#log{
+    font-size: 20px;
     border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 100%;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 
