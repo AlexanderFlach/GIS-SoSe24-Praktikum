@@ -4,6 +4,7 @@
         <link type="text/css" rel="stylesheet" href="Stylesheet.css">
     </head>
     <body>
+
         <header>
             <div id="logo" class="center"> <!--Logo + Text-->
                 <a href="welcome_website.html">
@@ -12,7 +13,7 @@
                 </a>
             </div>
             <div style="flex: 1;" id="welcomeText" class="headerText"> <!--Username-->
-                <p> Welcome Alexander Flach!</p>
+                <p>Your Account</p>
             </div>
             <div>
                 <a href="welcome_website.html" class="headerText buttonColor" id="konto">Logout</a>
@@ -20,8 +21,42 @@
         </header>
 
         <div><br><br><br></div>
-        <div>
-            <p class="headerText center">current balance</p>
-        </div>
+
+        <main>
+            <div id="accountBalance">
+                
+                <b><label class="center" id="labelBalance">Current Balance</label></b>
+                <output for="Deposit Withdraw" class="center" id="outputBalance">0 €</output>
+                
+            </div>
+            <div class="login">
+                <form id="login" method="get" action="account.html">
+                    <p><b>Transaction</b></p>
+                    <label><b>Deposit Money</b></label>
+                    <input type="text" name="Uname" id="Uname" placeholder="Amount in €">
+                    <br><br>
+                    <input type="submit" id="log" value="Deposit" class="center buttonColor">
+                    <br><br>
+                    <label><b>Withdraw Money</b></label>
+                    <input type="text" name="Uname" id="Uname" placeholder="Amount in €">
+                    <br><br>
+                    <input type="submit" id="log" value="Withdraw" class="center buttonColor">
+
+                </form>
+            </div>
+        </main>
+
+        <footer id="footer">
+            <div>
+                <p>Support</p>
+                <p>|</p>
+                <p>Cookie Settings</p>
+                <p>|</p>
+                <a href="https://pixlr.com/de/image-generator/">Image-Source</a>
+                <img src="twitter.png" alt="">
+                <img src="insta.png" alt="">
+            </div>
+        </footer>
+
     </body>
 </html>
