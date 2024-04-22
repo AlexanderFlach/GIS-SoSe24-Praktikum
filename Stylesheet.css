@@ -4,49 +4,68 @@ body{
     margin: 0;
     padding: 0;
 }
+header{
+    display: flex;
+}
 main{
     flex-wrap: wrap;
 }
+#footer{
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: var(--c4);
+    div{
+        display: flex;
+    }
+    p{
+        font-size: 20px;
+        margin: 10px;
+        color: var(--c1);
+    }
+    a{
+        font-size: 20px;
+        margin: 10px;
+        color: var(--c1);
+    }
+    img{
+        width: 40px;
+        margin: 20px;
+        margin-right: 30px;
+    }
+}
+/* COLOR */
+:root{
+    --c1: #E3FEF7;
+    --c2: #77B0AA;
+    --c3: #135D66;
+    --c4: #003C43;
+}
 .buttonColor{
     color: #135D66;
-    background-color: #77B0AA;
+    background-color: var(--c2);
 }
+.buttonColor:hover{
+    color: var(--c1);
+}
+/* BUTTONS */
+#buttonWindow{
+    font-size: 20px;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+/* CLASS TO CENTER DIVS*/
 .center{
     display: block;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-  }
-header{
-    display: flex;
-    max-height: 97px;
 }
-a{  /* no blue underline below links */
-    text-decoration: none;
-}
-a:hover{
-    color: red;
-}
-.buttonColor:hover{
-    color: #E3FEF7;
-}
-
-
-/* HOMEPAGE */
-
-
-#register{
-    white-space: nowrap;
-}
-#logo{
-    width: 75px;
-    margin-left: 10px;
-    margin-right: 10px;
-    p{
-        margin: 0;
-        color: #135D66;
-    }
-}
+/* DESIGN OF TEXT IN HEADER */
 .headerText{
     line-height: 100px;
     margin-left: 10px;
@@ -64,52 +83,44 @@ a:hover{
         white-space: nowrap;
     }
 }
-#imgHeader{ /* bank card background on home page */
+/* NO BLUE UNDERLINE UNDER LINKS */
+a{
+    text-decoration: none;
+}
+
+
+/* HOMEPAGE */
+
+/* LOGO + TEXT IN HEADER */
+#logo{
+    width: 75px;
+    margin-left: 10px;
+    margin-right: 10px;
+    p{
+        margin: 0;
+        color: var(--c3);
+    }
+}
+/* BANK CARD BACKGROUND */
+#imgHeader{
     max-height: 400px;
-    background-color: cadetblue;
+    background-color: var(--c3);
     margin-top: 20px;
     padding-top: 35px;
     padding-bottom: 40px;
 }
-#cardImg{   /* bank card on home */
+#cardImg{   /* BANK CARD */
     max-height: 100%;
     max-width: 500px;
     border-radius: 6% 6% 6% 6%;
     box-shadow: 4px 4px 30px rgb(154, 203, 219);
 }
 
-/* footer section */
-
-#footer{
-    text-align: right;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 5rem;
-    background-color: #003C43;
-    div{
-        display: flex;
-    }
-    p{
-        font-size: 20px;
-        margin: 10px;
-        color: #E3FEF7;
-    }
-    a{
-        font-size: 20px;
-        margin: 10px;
-        color: #E3FEF7;
-    }
-    img{
-        width: 40px;
-        margin: 20px;
-        margin-right: 30px;
-    }
-}
 
 /* LOGIN PAGE */
 
-
+/* LOGIN WINDOW */
+/* ALSO USED FOR REGISTER WINDOW */
 .login{
     background-color: white;
     margin-left: 30%;
@@ -124,9 +135,10 @@ a:hover{
         font-size: 35px;
         text-align: center;
         padding-bottom: 10px;
-        border-bottom: 2px #135D66 solid;
+        border-bottom: 2px var(--c3) solid;
     }
 }
+/* INPUT FIELDS - LOGIN / REGISTER WINDOW */
 input[type=text], input[type=password], input[type=number]{
     width: 100%;
     padding: 12px 20px;
@@ -136,29 +148,16 @@ input[type=text], input[type=password], input[type=number]{
     box-sizing: border-box;
     border-radius: 5px;
 }
-input::-webkit-outer-spin-button, /*hides arrows*/
+/* HIDES ARROWS */
+input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button{
     -webkit-appearance: none;
     margin: 0;
 }
-input[type=number]{
-    letter-spacing: 50%;
-}
-
-
-/* BUTTONS */
-
-#log{
-    font-size: 20px;
-    border: none;
-    border-radius: 3px;
-    padding: 10px;
-    margin-bottom: 10px;
-}
 
 
 /* ACCOUNT PAGE */
-
+/* SAME WINDOW AS LOGIN / REGISTER */
 
 #welcomeText{
     font-size: 30px;
@@ -170,7 +169,7 @@ input[type=number]{
     padding-bottom: 5px;
     margin-right: 20px;
     margin-left: 20px;
-    border-bottom: 2px #135D66 solid;
+    border-bottom: 2px var(--c3) solid;
 }
 #outputBalance{
     font-size: 20px;
@@ -180,9 +179,9 @@ input[type=number]{
     margin-left: 30%;
 }
 #accountBalance{
-    border: 2px #135D66 solid;
+    border: 2px var(--c3) solid;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px #77B0AA ;
+    box-shadow: 2px 2px 5px var(--c2) ;
     margin-left: 30%;
     margin-right: 30%;
     margin-bottom: 20px;
