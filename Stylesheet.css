@@ -159,6 +159,10 @@ input::-webkit-inner-spin-button{
 /* ACCOUNT PAGE */
 /* SAME WINDOW AS LOGIN / REGISTER */
 
+#accountHeader{
+    background-color: var(--c1);
+    height: 100px;
+}
 #welcomeText{
     font-size: 30px;
     margin-left: 10%;
