@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link type="text/css" rel="stylesheet" href="Stylesheet.css">
-    </head>
+    <head><link rel="stylesheet" href="StylesheetMobile.css">
+        <link rel="stylesheet" media="screen and (min-width: 480px)" href="StylesheetMobile.css">
+        <link rel="stylesheet" media="screen and (min-width: 1920px)" href="StylesheetPC.css"></head>
     <body>
         <header>
-            <div id="logo"> <!--Logo + Text-->
+            <div id="Logo">
                 <a href="welcome_website.html">
-                    <img src="Logo.png" width="100%">
-                    <b><p class="center">Constantin Banking</p></b>
+                    <img src="Logo.png">
+                    <b><p class="">Constantin <br> Banking</p></b>
                 </a>
             </div>
             <div style="flex: 1;"> <!--filler div-->
             </div>
             <div>
-                <a href = login.html class="headerText buttonColor">Login</a>
+                <a href="register.html" id="Register" class="button">Register</a>
             </div>
             <div>
-                <a href="register.html" class="headerText buttonColor">Register</a>
+                <a href = login.html id="Login" class="button">Login</a>
+            </div>
+            <div id="PageTitle">
+                <p>Homepage</p>
             </div>
         </header>
 
@@ -26,7 +29,7 @@
                 <img src="BankCardImage.png" width="70%" class="center" id="cardImg">
             </div>
         </main>
-        
+
         <footer>
             <div>
                 <p>Support</p>
@@ -34,7 +37,6 @@
                 <p>Cookie Settings</p>
                 <p>|</p>
                 <a href="https://pixlr.com/de/image-generator/">Image-Source</a>
-                <div style="flex: 1;"></div> <!--filler div-->
                 <img src="twitter.png" id="twitter">
                 <img src="insta.png" id="insta">
             </div>
