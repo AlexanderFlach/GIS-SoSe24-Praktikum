@@ -2,5 +2,12 @@
     "image1": "Logo.png",
     "image2": "BankCardImage.png",
     "image3": "twitter.png",
-    "image4": "insta.png"
+    "image4": "insta.png",
+
+    "accountData": 
+        {
+            "username": "Alex",
+            "password": "passwort",
+            "pin": "1234"
+        }
 }

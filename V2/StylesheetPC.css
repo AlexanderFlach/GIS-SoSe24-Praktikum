@@ -14,9 +14,16 @@
     color: var(--c3);
     background-color: var(--c2);
     border-radius: 5px;
+
+    display:inline-block; /* necessary for using margin-top */
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 30px;
 }
 
-.headerButton:hover{
+.button:hover{
     transition-duration: 0.4s;
     color: var(--c1);
     background-color: var(--c3);
@@ -26,7 +33,6 @@
 a{
     text-decoration: none;
 }
-
 
 body{
     font-family: 'Arial';
@@ -61,17 +67,11 @@ body{
             color: var(--c3);
             text-align: left;
         }
-
-        .headerButton{
-            display:inline-block; /* necessary for using margin-top */
-            margin-top: 30px;
-            margin-left: 20px;
-            margin-right: 20px;
-            padding: 10px;
-            font-size: 30px;
-        }
     }
     
+    #body.account{
+        height: 600px;
+    }
     #body{
 
         width: 100%;
@@ -79,6 +79,9 @@ body{
         padding: 20px;
         background-color: var(--c3);
         text-align: center;
+        div{
+            border: 1px red solid;
+        }
 
         /* HOMEPAGE */
         #imageBankCard{
@@ -92,10 +95,9 @@ body{
             width: 630px;
             margin-top: 50px;
         }
-        
+
         /* LOGIN */
         .inputForm{
-            
             background-color: white;
             margin-left: 30%;
             margin-right: 30%;
@@ -118,7 +120,12 @@ body{
             margin-top: 55px;
         }
 
+        /* ACCOUNT PAGE */
+        #transactions{
+            margin-left: -500px;
+        }
     }
+
  
     #footer {
 
@@ -158,7 +165,6 @@ input[type=text], input[type=password], input[type=number]{
     width: 100%;
     padding: 12px 20px;
     margin: 8px;
-    display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
     border-radius: 5px;
