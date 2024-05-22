@@ -9,5 +9,8 @@
             "username": "Alex",
             "password": "passwort",
             "pin": "1234"
-        }
+        },
+
+    "transHistory": [{"title": "Transaction History"}],
+    "balance": "250"
 }

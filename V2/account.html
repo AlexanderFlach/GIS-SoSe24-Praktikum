@@ -36,20 +36,27 @@
 
             <div id="balance" class="inputForm">
                 
+                <div id="balanceDiv" class="flex">
+                    <p>Current Balance:&nbsp;</p>
+                    <p id="currentBalance"></p>
+                    <p>€</p>
+                </div>
+                
                 <p>Transaction</p>
                 <form id="transactionForm" action="account.html">
                     <b><label>PIN</label></b>
                     <input type="password" maxlength="4" placeholder="1234" id="pin">
                     <b><label>Deposit Money</label></b>
-                    <input type="text" placeholder="00.00€">
+                    <input type="text" placeholder="00.00€" id="depositAmount">
                     <input type="submit" value="Deposit" id="deposit" class="headerButton button"> <br>
                     <b><label>Withdraw Money</label></b>
-                    <input type="password" placeholder="00.00€">
-                    <input type="submit" value="Withdraw" class="headerButton button">
+                    <input type="text" placeholder="00.00€" id="withdrawAmount">
+                    <input type="submit" value="Withdraw" id="withdraw" class="headerButton button">
                 </form>
             </div>
-            <div id="transactions">
-                <p>Transaction History</p>
+            <div id="transactionDiv">
+                <p id="thTitle">Transaction History</p>
+                <p id="transactions"></p>
             </div>
         </div>
         
