@@ -137,7 +137,7 @@ fetch("data.json")
                             }
                             else{
                                 document.getElementById("withdrawAmount").placeholder = "00.00€";
-                                localStorage.setItem("balance", Number(document.getElementById("withdrawAmount").value) + Number(document.getElementById("currentBalance").innerHTML)); // add Amount to Current Balance)
+                                localStorage.setItem("balance",Number(document.getElementById("currentBalance").innerHTML) - Number(document.getElementById("withdrawAmount").value)); // add Amount to Current Balance)
                                 var testArray = [];
                                 if(localStorage.getItem("transactionsHistory") != null){
                                     testArray = (JSON.parse(localStorage.getItem("transactionsHistory")));
