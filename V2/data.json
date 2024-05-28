@@ -2,7 +2,5 @@
     "image1": "Logo.png",
     "image2": "BankCardImage.png",
     "image3": "twitter.png",
-    "image4": "insta.png",
-
-    "transHistory": [{"title": "Transaction History"}]
+    "image4": "insta.png"
 }

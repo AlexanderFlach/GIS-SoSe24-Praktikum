@@ -7,9 +7,6 @@ var registerForm = document.getElementById("registerForm");
 var loginForm = document.getElementById("loginForm");
 var transactionForm = document.getElementById("transactionForm");
 
-//var balance = localStorage.setItem("balance", 250);
-//var transactionHistory = JSON.parse(localStorage.getItem("transactionHistory"));
-
 
 fetch("data.json")
     .then(response => response.json())
@@ -21,9 +18,7 @@ fetch("data.json")
         if(twitterImage != null) {twitterImage.src = json.image3;}
         if(instagramImage != null) {instagramImage.src = json.image4;}
         
-        if(document.getElementById("thTitle") != null) {
-            document.getElementById("thTitle").innerHTML = json.transHistory[0].title;
-        }
+
         
         //Event Listener for Register
         if(registerForm != null){
@@ -47,12 +42,12 @@ fetch("data.json")
                 }
                 else{
                     e.preventDefault();
-                    document.getElementById("pin").placeholder = "Enter PIN";
+                    document.getElementById("pin").placeholder = "Enter PIN!";
                 }
             })
         }
 
-        //Event Listener for login
+        //event listener for login
         if(loginForm != null){
             console.log(localStorage.getItem("username"));
             console.log(localStorage.getItem("password"));
@@ -76,7 +71,7 @@ fetch("data.json")
             })
         }
 
-
+        //event listener for transaction
         if(transactionForm != null){
             document.getElementById("currentBalance").innerHTML = localStorage.getItem("balance");
             

@@ -1,0 +1,195 @@
+/* COLOR */
+:root {
+    --c1: #E3FEF7;
+    --c2: #77B0AA;
+    --c3: #135D66;
+    --c4: #003C43;
+}
+/* NO BLUE UNDERLINE UNDER LINKS */
+a{
+    text-decoration: none;
+}
+.border{
+    
+}
+.flex{
+    display: flex;
+}
+.flexCol{
+    display: flex;
+    flex-direction: column;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial';
+}
+
+.container{
+    min-height: 100vh;
+}
+
+#header{
+
+    #logo{
+        display: table;
+        max-width: 75px;
+        padding: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+
+        #imageLogo{
+            width: 100px;
+        }
+        #textLogo{
+            font-size: 20px;
+            text-align: center;
+            margin: 0;
+            word-break: keep-all;
+            color: var(--c3);
+        }
+    }
+    
+    .headerText{
+        font-size: 40px;
+        margin-left: 40%;
+        color: var(--c3);
+    }
+    .headerButtons{
+        justify-content: flex-end;
+        margin-left: auto;
+
+        .buttons{
+            color: var(--c3);
+            background-color: var(--c2);
+            border-radius: 5px;
+            margin: 50px;
+            padding: 10px;
+            line-height: 450%;
+            font-size: 30px;
+        }
+        #loginButton{
+            margin-right: -20px;
+        }
+    }
+    
+}
+
+#mainHome{
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: var(--c3);
+    text-align: center;
+
+    #imageBankCard{
+        width: 35%;
+        margin-top: 5%;
+    }
+}
+
+.main{
+    background-color: var(--c3);
+    text-align: center;
+    justify-content: center;
+    #login{
+        margin-top: 5%;
+        background-color: white;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 20px rgb(154, 203, 219);
+        
+
+        p{
+            font-size: 30px;
+            padding-bottom: 10px;
+            border-bottom: 2px var(--c3) solid;
+
+        }
+        input{
+            
+            border: 1px gray solid;
+            border-radius: 5px;
+            padding: 10px;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 30px;
+
+        }
+        input[type="submit"]{
+            
+            margin-top: 40px;
+            font-size: 30px;
+            color: var(--c3);
+            background-color: var(--c2);
+            border: none;
+            
+        }
+        label{
+            display: inline-block;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+#accMain{
+
+    padding-bottom: 30px;
+    
+    #login{
+        max-height: fit-content;
+        min-width: 50%;
+        margin-top: 2%;
+        margin-right: 10%;
+    }
+    #balanceDiv{
+        background-color: white;
+        max-height: 80%;
+        margin-top: 2%;
+        margin-bottom: 3%;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 20px rgb(154, 203, 219);
+
+        p{
+            font-size: 30px;
+            padding-bottom: 10px;
+        }
+        
+    }
+    #transactionDiv{
+        
+        background-color: white;
+        margin-top: 2%;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 20px rgb(154, 203, 219);
+        
+        p{
+            font-size: 30px;
+            padding-bottom: 10px;
+        }
+        #transactions{
+            min-height: 500px;
+            max-height: 500px;
+            overflow: scroll;
+        }
+        #thTitle{
+            border-bottom: 2px var(--c3) solid;
+        }
+    }
+    #deposit{
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    #withdraw{
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+}
+#footer{
+    
+}
+
