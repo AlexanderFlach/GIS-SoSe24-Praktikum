@@ -28,6 +28,12 @@
                 <div id="pageTitle">
                     <p class="headerText">Account</p>
                 </div>
+
+                <div id="balanceDiv" class="flex">
+                    <p>Current Balance:&nbsp;</p>
+                    <p id="currentBalance"></p>
+                    <p>€</p>
+                </div>
                 
                 <div class="headerButtons">
                     <a id="loginButton" class="buttons" href="homepage_new.html">back to homepage</a>
@@ -46,10 +52,10 @@
                         <input type="password" maxlength="4" placeholder="1234" id="pin">
                         <b><label>Deposit Money</label></b>
                         <input type="text" placeholder="00.00€" id="depositAmount">
-                        <input type="submit" value="Deposit" id="deposit"> <br>
+                        <input type="submit" value="Deposit" id="deposit" class="submitButton"> <br>
                         <b><label>Withdraw Money</label></b>
                         <input type="text" placeholder="00.00€" id="withdrawAmount">
-                        <input type="submit" value="Withdraw" id="withdraw">
+                        <input type="submit" value="Withdraw" id="withdraw" class="submitButton">
                     </form>
                 </div>
                 
@@ -63,11 +69,7 @@
             </div>
 
 
-            <div id="balanceDiv" class="flex">
-                <p>Current Balance:&nbsp;</p>
-                <p id="currentBalance"></p>
-                <p>€</p>
-            </div>
+            
         </div>
         
 

@@ -55,6 +55,14 @@ body{
         margin-left: 40%;
         color: var(--c3);
     }
+    #balanceDiv{
+        margin-left: 15%;
+        p{
+            font-size: 40px;
+            text-wrap: nowrap;
+        }
+        
+    }
     .headerButtons{
         justify-content: flex-end;
         margin-left: auto;
@@ -68,6 +76,11 @@ body{
             line-height: 450%;
             font-size: 30px;
         }
+        .buttons:hover{
+            transition-duration: 0.4s;
+            color: var(--c1);
+            background-color: var(--c3);
+        }
         #loginButton{
             margin-right: -20px;
         }
@@ -77,23 +90,34 @@ body{
 
 #mainHome{
 
-    margin-top: 5%;
     margin-bottom: 5%;
     background-color: var(--c3);
     text-align: center;
 
     #imageBankCard{
         width: 35%;
+        margin-top: 7%;
+        transition: 0.5s;
+    }
+    #imageBankCard:hover{
+        width: 40%;
         margin-top: 5%;
     }
 }
+
 
 .main{
     background-color: var(--c3);
     text-align: center;
     justify-content: center;
+
+    
+
+    
     #login{
         margin-top: 5%;
+        margin-right: 20%;
+        margin-left: 20%;
         background-color: white;
         padding-top: 10px;
         padding-bottom: 20px;
@@ -124,7 +148,11 @@ body{
             color: var(--c3);
             background-color: var(--c2);
             border: none;
-            
+        }
+        .submitButton:hover{
+            transition-duration: 0.4s;
+            color: var(--c1);
+            background-color: var(--c3);
         }
         label{
             display: inline-block;
@@ -143,22 +171,18 @@ body{
         min-width: 50%;
         margin-top: 2%;
         margin-right: 10%;
-    }
-    #balanceDiv{
-        background-color: white;
-        max-height: 80%;
-        margin-top: 2%;
-        margin-bottom: 3%;
-        padding: 10px;
-        border-radius: 10px;
-        box-shadow: 2px 2px 20px rgb(154, 203, 219);
+        margin-left: 3%;
 
-        p{
-            font-size: 30px;
-            padding-bottom: 10px;
+        #deposit{
+            margin-top: 10px;
+            margin-bottom: 0;
         }
-        
+        #withdraw{
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
     }
+    
     #transactionDiv{
         
         background-color: white;
@@ -180,14 +204,7 @@ body{
             border-bottom: 2px var(--c3) solid;
         }
     }
-    #deposit{
-        margin-top: 10px;
-        margin-bottom: 0;
-    }
-    #withdraw{
-        margin-top: 10px;
-        margin-bottom: 0;
-    }
+
 }
 #footer{
     
