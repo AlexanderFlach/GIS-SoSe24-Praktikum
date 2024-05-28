@@ -4,13 +4,5 @@
     "image3": "twitter.png",
     "image4": "insta.png",
 
-    "accountData": 
-        {
-            "username": "Alex",
-            "password": "passwort",
-            "pin": "1234"
-        },
-
-    "transHistory": [{"title": "Transaction History"}],
-    "balance": "250"
+    "transHistory": [{"title": "Transaction History"}]
 }
