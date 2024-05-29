@@ -112,7 +112,7 @@ fetch("data.json")
                                     document.getElementById("transactions").innerHTML += testArray[i] + "<br>";
                                 }
 
-                                document.getElementById("currentBalance").innerHTML = localStorage.getItem("balance"); // update Current Balance
+                                document.getElementById("currentBalance").innerHTML = localStorage.getItem("balance"); // update Current Balance //textcontent
                                 document.getElementById("depositAmount").value = ""; //clear field after transaction
                                 console.log(testArray);
                             }
