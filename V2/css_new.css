@@ -9,9 +9,6 @@
 a{
     text-decoration: none;
 }
-.border{
-    
-}
 .flex{
     display: flex;
 }
@@ -105,14 +102,10 @@ body{
     }
 }
 
-
 .main{
     background-color: var(--c3);
     text-align: center;
     justify-content: center;
-
-    
-
     
     #login{
         margin-top: 5%;
@@ -123,13 +116,11 @@ body{
         padding-bottom: 20px;
         border-radius: 10px;
         box-shadow: 2px 2px 20px rgb(154, 203, 219);
-        
 
         p{
             font-size: 30px;
             padding-bottom: 10px;
             border-bottom: 2px var(--c3) solid;
-
         }
         input{
             
@@ -139,7 +130,6 @@ body{
             margin-left: 5%;
             margin-right: 5%;
             margin-bottom: 30px;
-
         }
         input[type="submit"]{
             
@@ -167,7 +157,6 @@ body{
     padding-bottom: 30px;
     
     #login{
-        max-height: fit-content;
         min-width: 50%;
         margin-top: 2%;
         margin-right: 10%;
@@ -197,7 +186,7 @@ body{
         }
         #transactions{
             min-height: 500px;
-            max-height: 500px;
+            max-height: 575px;
             overflow: scroll;
         }
         #thTitle{
