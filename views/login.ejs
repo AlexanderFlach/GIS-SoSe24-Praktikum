@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="css/stylesheet.css">
+
+    </head>
+    
+    <body>
+        
+        <div class="container flexCol border">
+
+
+            <div id="header" class="flex border">
+
+                <div id="logo">
+                    <a href="/">
+                        <img id="imageLogo" src="img/Logo.png">
+                        <b><p id="textLogo">Constantin Banking</p></b>
+                    </a>
+                </div>
+            
+                <div id="pageTitle">
+                    <p class="headerText">Login</p>
+                </div>
+                
+                <div class="headerButtons">
+                    <a id="loginButton" class="buttons" href="/">back to homepage</a>
+                    <a id="registerButton" class="buttons" href="register">REGISTER</a>
+                </div>
+            </div>
+    
+            <div style="flex: 1;" class="main border">
+
+                <div id="login" class="inputForm">
+                
+                    <p>Login</p>
+                    <form id="loginForm" class=" flexCol" action="account">
+                        <b><label>User Name</label></b>
+                        <input type="text" placeholder="Username" id="username">
+                        <b><label>Password</label></b>
+                        <input type="password" placeholder="Password" id="password">
+                        <input type="submit" value="Login" class="submitButton">
+                    </form>
+                </div>
+            </div>
+
+            <div id="footer"></div>
+        </div>
+        
+
+        <script src="js/script.js"></script>
+
+    </body>
+    
+</html>
