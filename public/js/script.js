@@ -1,60 +1,6 @@
 
-var registerForm = document.getElementById("registerForm");
-var loginForm = document.getElementById("loginForm");
 var transactionForm = document.getElementById("transactionForm");
-
-
-
-//Event Listener for Register
-if(registerForm != null){
-    registerForm.addEventListener("submit", e => {
-        if(document.getElementById("username").value != ""){
-            localStorage.setItem("username", document.getElementById("username").value);
-        }
-        else{
-            e.preventDefault();
-            document.getElementById("username").placeholder = "Enter username!"
-        }
-        if(document.getElementById("password").value != ""){
-            localStorage.setItem("password", document.getElementById("password").value);
-        }
-        else{
-            e.preventDefault();
-            document.getElementById("password").placeholder = "Enter password!";
-        }
-        if(document.getElementById("pin").value != ""){
-            localStorage.setItem("pin", document.getElementById("pin").value);
-        }
-        else{
-            e.preventDefault();
-            document.getElementById("pin").placeholder = "Enter PIN!";
-        }
-    })
-}
-
-//event listener for login
-if(loginForm != null){
-    console.log(localStorage.getItem("username"));
-    console.log(localStorage.getItem("password"));
-    loginForm.addEventListener("submit", e => {
-        var username = document.getElementById("username").value;
-        var password = document.getElementById("password").value;
-
-        if(username != localStorage.getItem("username")){
-            e.preventDefault();
-            document.getElementById("username").value = null;
-            document.getElementById("username").placeholder = "Wrong Username!";
-            console.log(localStorage.getItem("username"));
-        }
-        if(password != localStorage.getItem("password")){
-            e.preventDefault();
-                document.getElementById("password").value = null;
-                document.getElementById("password").placeholder = "Wrong Password!";
-                console.log(localStorage.getItem("password"));
-
-        }
-    })
-}
+console.log("test");
 
 //event listener for transaction
 if(transactionForm != null){
@@ -65,7 +11,6 @@ if(transactionForm != null){
         document.getElementById("transactions").innerHTML += array[i] + "<br>";
     }
     console.log(array);
-    
     
     
     transactionForm.addEventListener("submit", e => {

@@ -1,9 +1,9 @@
-
 // Imports
 const express = require("express")
 const User = require("./models/User")
 const mongoose = require("mongoose")
 var bodyParser = require('body-parser')
+
 mongoose.connect("mongodb://localhost:27017/Login")
 
 const db = mongoose.connection
@@ -26,14 +26,7 @@ app.use("/img", express.static(__dirname + "public/img"))
 app.set("views", "./views")
 app.set("view engine", "ejs")
 
-
-async function createUser(data) {
-    const user = new User({username: data.username, password: data.password, pin: data.pin})
-    await user.save()
-    console.log(user)
-}
-
-
+var data = []
 
 app.get("/", (req, res) => {
     res.render("homepage")
@@ -45,34 +38,75 @@ app.get("/register", (req, res) => {
     res.render("register")
 })
 app.get("/account", (req, res) => {
-    res.render("account")
+    data = []
+    res.render("account", {data: data})
 })
 
 app.post("/login", async (req, res) => {
     const {username, password, pin} = req.body
     const user = await User.findOne({username})
     if(user && user.password === password) {
-        res.redirect(`/account?id=${encodeURIComponent(user._id)}`)
+        console.log("successfully logged in")
+        res.redirect("/account")
     }
     else {
-        res.send({user, body: req.body})
+        console.log("Login failed")
+        res.redirect("/login")
     }
-})
+}) 
+
 
 app.post("/register", async (req, res) => {
     const {username, password, pin} = req.body
-    const user = new User({username, password, pin})
-    await user.save()
-    console.log(user)
-    res.redirect(`/login?id=${encodeURIComponent(user._id)}`)
+    const user = await User.findOne({ username: username})
+    if(!user) {
+        const user = new User({username, password, pin, balance: 0, history: []})
+        await user.save()
+        console.log("new User created")
+        res.redirect("/login")
+    }
+    else {
+        console.log("User already exists")
+        res.redirect("/register")
+    }
 })
 
+var historyInit = false
+
 app.post("/account", async (req, res) => {
-    const {pin, deposit, withdraw} = req.body
-    const url = new URL(req.url || '', `http://${req.headers.host}`);
-    const id = url.searchParams.get("id");
-    console.log(url.searchParams.has("id"))
-    console.log(id)
+    const {username, pin, deposit, withdraw} = req.body
+    const user = await User.findOne({ username: username})
+    
+    data = []
+    
+    if(user && user.pin == pin) {
+
+        if(user.history) {
+            for(let i = 0; i < 99; i++) {
+                if(user.history[i]) {
+                    data.unshift(user.history[i].transaction.type + ": " + user.history[i].transaction.value)
+                }
+                else {break}
+            }
+        }
+        
+        if(withdraw != 0) {
+            user.history.push({transaction: {type:"withdraw", value: withdraw}})
+            data.unshift("withdraw: " + withdraw)
+            await user.save()
+        }
+        if(deposit != 0) {
+            user.history.push({transaction: {type:"deposit", value: deposit}})
+            data.unshift("deposit: " + deposit)
+            await user.save()
+        }
+        res.render("account", {data: data})
+    }
+    else {
+        console.log("User does not exist or incorrect PIN!")
+        res.redirect("/account")
+    }
+    
 })
 
 

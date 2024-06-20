@@ -31,7 +31,8 @@
 
                 <div id="balanceDiv" class="flex">
                     <p>Current Balance:&nbsp;</p>
-                    <p id="currentBalance"></p> 
+                    <p id="currentBalance">
+                    </p> 
                     <p>€</p>
                 </div>
                 
@@ -48,6 +49,8 @@
                 
                     <p>Transaction</p>
                     <form id="transactionForm" class="flexCol" action="account" method="post">
+                        <b><label>Username</label></b>
+                        <input type="text" placeholder="Username" id="username" name="username">
                         <b><label>PIN</label></b>
                         <input type="password" maxlength="4" placeholder="1234" id="pin" name="pin">
                         <b><label>Deposit Money</label></b>
@@ -63,7 +66,12 @@
                         
                         
                     <p id="thTitle">Transaction History</p>
-                    <p id="transactions"></p>
+                    <p id="transactions">
+                        <% data.forEach(element => { %> 
+                            <%= element %>
+                            <br>
+                            <% }) %>
+                    </p>
                 </div>
            
             </div>
@@ -73,7 +81,7 @@
         </div>
         
 
-        <script src=""></script>
+        <script src="/public/js/script.js"></script>
 
     </body>
     

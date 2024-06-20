@@ -13,7 +13,22 @@ const userSchema = new mongoose.Schema({
         type: Number,
         required: true,
         max: 9999
-    }
+    },
+    balance: {
+        type: Number,
+        required: true
+    },
+    history: [{
+        transaction: {
+            type: {
+                type: String
+            },
+            
+            value: {
+                type: Number
+            }
+        }
+    }]
 })
 
 module.exports = mongoose.model("User", userSchema)
