@@ -1,7 +1,3 @@
-var logoImage = document.querySelector("#imageLogo");
-var bankCardImage = document.querySelector("#imageBankCard");
-var twitterImage = document.querySelector("#imageTwitter");
-var instagramImage = document.querySelector("#imageInstagram");
 
 var registerForm = document.getElementById("registerForm");
 var loginForm = document.getElementById("loginForm");

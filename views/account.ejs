@@ -47,14 +47,14 @@
                 <div id="login" class="border">
                 
                     <p>Transaction</p>
-                    <form id="transactionForm" class="flexCol" action="account">
+                    <form id="transactionForm" class="flexCol" action="account" method="post">
                         <b><label>PIN</label></b>
-                        <input type="password" maxlength="4" placeholder="1234" id="pin">
+                        <input type="password" maxlength="4" placeholder="1234" id="pin" name="pin">
                         <b><label>Deposit Money</label></b>
-                        <input type="text" placeholder="00.00€" id="depositAmount">
+                        <input type="text" placeholder="00.00€" id="depositAmount" name="deposit">
                         <input type="submit" value="Deposit" id="deposit" class="submitButton"> <br>
                         <b><label>Withdraw Money</label></b>
-                        <input type="text" placeholder="00.00€" id="withdrawAmount">
+                        <input type="text" placeholder="00.00€" id="withdrawAmount" name="withdraw">
                         <input type="submit" value="Withdraw" id="withdraw" class="submitButton">
                     </form>
                 </div>
@@ -73,7 +73,7 @@
         </div>
         
 
-        <script src="js/script.js"></script>
+        <script src=""></script>
 
     </body>
     
